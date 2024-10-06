@@ -226,8 +226,8 @@ def add_predictions(input_data):
             </p>
             <h3 style="color: white;">Probability</h3>
             <p style="color: white;">
-                Positive: {model.predict_proba(input_array_scaled)[0][0]:.2f}%<br>
-                Negative: {(model.predict_proba(input_array_scaled)[0][1])*100:.2f}%
+                Positive: {model.predict_proba(input_array_scaled)[0][1]:.2f}%<br>
+                Negative: {(model.predict_proba(input_array_scaled)[0][0])*100:.2f}%
             </p>
         </div>
         """,
