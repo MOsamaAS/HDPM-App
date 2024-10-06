@@ -33,7 +33,7 @@ def create_model(predictors, diagnosis):
     return model, scaler
 
 def main():
-    data = pd.read_csv(r"C:\Users\calli\OneDrive\Desktop\Strands\Deep Learning\Heart Disease Classification\Data\heart.csv")
+    data = pd.read_csv("Data/heart.csv")
     print(data.head())
     print(data.isnull().sum())
     predictors, diagnosis = clean_data(data)
