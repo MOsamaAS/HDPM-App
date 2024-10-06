@@ -64,7 +64,7 @@ def main():
 
 
 def get_data():
-    data = pd.read_csv(r"C:\Users\calli\OneDrive\Desktop\Strands\Deep Learning\Heart Disease Classification\Data\heart.csv")
+    data = pd.read_csv("Data/heart.csv")
     return data
 
 def sidebar(data):
@@ -151,7 +151,7 @@ def sidebar(data):
     return input_dict
 
 def get_scaled_values(input_dict):
-    data = pd.read_csv(r"C:\Users\calli\OneDrive\Desktop\Strands\Deep Learning\Heart Disease Classification\Data\heart.csv")
+    data = pd.read_csv("Data/heart.csv")
     predictors = data.drop(['target'], axis=1)
   
     scaled_dict = {}
